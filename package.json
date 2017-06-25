@@ -1,8 +1,5 @@
 {
   "name": "requestify",
-  "engines": {
-    "node": "=50.9"
-  },
   "version": "1.0.0",
   "description": "Simple React App",
   "main": "index.js",
