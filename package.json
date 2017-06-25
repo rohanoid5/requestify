@@ -1,7 +1,7 @@
 {
   "name": "requestify",
   "engines": {
-    "node": ">=50.9" // intentionally so big version number
+    "node": ">=50.9"
   },
   "version": "1.0.0",
   "description": "Simple React App",
