@@ -126,15 +126,33 @@ class RequestItem extends React.Component {
   				</div>
   				<div style={dStyle}>
   					<div style={tStyle1}>Requested At</div>
-  					<div style={tStyle4}>{this.props.request.requested_at}</div>
+						<div style={tStyle4}>
+            {
+              new Date(this.props.request.requested_at).getDate() + '/' +
+              new Date(this.props.request.requested_at).getMonth() + '/' +
+              new Date(this.props.request.requested_at).getFullYear()
+            }
+            </div>
   				</div>
 					<div style={dStyle}>
   					<div style={tStyle1}>From</div>
-  					<div style={tStyle4}>{this.props.request.start_date}</div>
+						<div style={tStyle4}>
+            {
+              new Date(this.props.request.start_date).getDate() + '/' +
+              new Date(this.props.request.start_date).getMonth() + '/' +
+              new Date(this.props.request.start_date).getFullYear()
+            }
+            </div>
   				</div>
 					<div style={dStyle}>
   					<div style={tStyle1}>To</div>
-  					<div style={tStyle4}>{this.props.request.end_date}</div>
+						<div style={tStyle4}>
+            {
+              new Date(this.props.request.end_date).getDate() + '/' +
+              new Date(this.props.request.end_date).getMonth() + '/' +
+              new Date(this.props.request.end_date).getFullYear()
+            }
+            </div>
   				</div>
 					<div style={dStyle}>
   					<div style={tStyle1}>Approval Status</div>
